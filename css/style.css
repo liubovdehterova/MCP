@@ -353,6 +353,9 @@ span.ant-dot {
     color: rgb(224, 224, 224);
     letter-spacing: 1px;
 }
+.st__info__description-italic {
+    font-style: italic;
+}
 .st__info__description-other {
     letter-spacing: 1px;
 }
