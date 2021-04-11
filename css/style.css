@@ -16,6 +16,24 @@
     url("../fonts/NotoSerifSC-Regular-Alphabetic.woff2")
 }
 
+@font-face {
+    font-family: "Roboto-Medium";
+    src: url("../fonts/Roboto-Medium.svg"),
+    url("../fonts/Roboto-Medium.eot"),
+    url("../fonts/Roboto-Medium.ttf"),
+    url("../fonts/Roboto-Medium.woff"),
+    url("../fonts/Roboto-Medium.woff2")
+}
+
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url("../fonts/Roboto-Regular.svg"),
+    url("../fonts/Roboto-Regular.eot"),
+    url("../fonts/Roboto-Regular.ttf"),
+    url("../fonts/Roboto-Regular.woff"),
+    url("../fonts/Roboto-Regular.woff2")
+}
+
 .all {
     position: relative;
     background: url("../img/background/steel-metal.jpg") no-repeat;
@@ -23,20 +41,22 @@
     width: 100%;
 }
 .art__string {
-    font-family: "Caveat-Regular";
-    font-size: 20px;
+    font-family: "Caveat-Regular", sans-serif;
+    font-size: 22px;
 }
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: .5rem 0;
-    font-family: "NotoSerifSC-Regular-Alphabetic";
+    font-family: "Roboto-Regular", sans-serif;
 }
 .container-other {
     max-width: 1000px;
     background: rgba(48, 48, 48, 0.8);
     padding: .5rem 1rem;
     position: relative;
+}
+.container__carousel {
+    max-width: 1000px;
 }
 .all:before {
     content: "";
@@ -84,23 +104,28 @@
 }
 .bl__menu__list__link,
 .st__info__description__link {
+    font-family: "Roboto-Medium", sans-serif;
     text-decoration: none;
     color: rgb(61, 83, 44);
+}
+.bl__menu__list__link {
+    font-size: 18px;
 }
 .bl__main {
     position: relative;
     color: #ffffff;
     z-index: 5;
-    font-size: 18px;
+    font-size: 14px;
 }
 .bl__main__cr__flex-inner,
 .st__info__description-other,
 .bl__main__cr-other {
-    font-size: 18px;
+    font-size: 14px;
 }
 .st__info__title,
 .bl__main__cr__title {
-    color: rgb(255, 255, 255);
+    color: rgb(224, 224, 224);
+    letter-spacing: 3px;
 }
 .bl__main__cr {
     position: relative;
@@ -163,10 +188,10 @@
 .cr__bl {
     position: relative;
     z-index: 1;
-    background: rgb(61, 83, 44);
+    background: rgba(61, 83, 44, 0.7);
     display: flex;
     justify-content: space-evenly;
-    padding: 3rem 0;
+    padding: 2rem 0 3rem 0;
 }
 .cr__bl__inner {
     background: #ffffff;
@@ -273,7 +298,8 @@ span.ant-dot {
 }
 .bl__main__cr-other-fl {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    text-align: end;
 }
 .bl__main__cr-item {
     margin-top: 1rem;
@@ -297,7 +323,7 @@ span.ant-dot {
     display: block;
     color: rgb(40, 52, 30);
     text-align: right;
-    font-size: 18px;
+    font-size: 16px;
 }
 .footer__cont__phone-inner:before {
     content: "";
@@ -307,7 +333,7 @@ span.ant-dot {
     width: 2rem;
     height: 2rem;
     position: absolute;
-    right: 7.6rem;
+    right: 8rem;
     top: -5px;
 }
 .footer__cont__email-inner {
@@ -325,10 +351,17 @@ span.ant-dot {
 .st__info__description {
     width: 55%;
     color: rgb(224, 224, 224);
+    letter-spacing: 2px;
 }
-.st__info__description-finish{
+.st__info__description-other {
+    letter-spacing: 2px;
+}
+.bl__main__cr-other {
+    width: 70%;
+}
+.st__info__description-finish {
     width: 100%;
-    font-size: 20px;
+    font-size: 18px;
 }
 .bl__main__cr__flex-inner {
     width: 50%;
@@ -345,8 +378,8 @@ span.ant-dot {
     width: 3.5rem;
     height: 2rem;
     position: absolute;
-    right: 7.5rem;
-    top: 1px;
+    right: 8rem;
+    top: 3px;
 }
 .footer__cont__phone-inner-other {
     margin-top: 0.5rem;
@@ -365,7 +398,7 @@ span.ant-dot {
     color: #ffffff;
 }
 .st__info__description-other__size {
-    font-size: 20px;
+    font-size: 18px;
     color: #ffffff;
 }
 .footer__cont__phone {
@@ -373,4 +406,7 @@ span.ant-dot {
     justify-content: space-between;
     width: 100%;
     align-items: flex-end;
+}
+.bl__button {
+    padding: 1rem 0;
 }
