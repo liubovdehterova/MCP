@@ -125,7 +125,7 @@
 .st__info__title,
 .bl__main__cr__title {
     color: rgb(224, 224, 224);
-    letter-spacing: 3px;
+    letter-spacing: 1px;
 }
 .bl__main__cr {
     position: relative;
@@ -351,10 +351,10 @@ span.ant-dot {
 .st__info__description {
     width: 55%;
     color: rgb(224, 224, 224);
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 .st__info__description-other {
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 .bl__main__cr-other {
     width: 70%;
@@ -409,4 +409,7 @@ span.ant-dot {
 }
 .bl__button {
     padding: 1rem 0;
+}
+.st__info__description__pr {
+    width: 100%;
 }
