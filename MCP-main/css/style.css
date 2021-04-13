@@ -61,7 +61,7 @@
 .all:before {
     content: "";
     display: block;
-    background: rgba(78, 78, 78, 0.8);
+    background: rgba(78, 78, 78, 0.6);
     width: 100%;
     height: 100%;
     position: absolute;
@@ -109,7 +109,7 @@
     color: rgb(61, 83, 44);
 }
 .bl__menu__list__link {
-    font-size: 18px;
+    font-size: 22px;
 }
 .bl__main {
     position: relative;
@@ -120,12 +120,15 @@
 .bl__main__cr__flex-inner,
 .st__info__description-other,
 .bl__main__cr-other {
-    font-size: 14px;
+    font-size: 18px;
 }
 .st__info__title,
 .bl__main__cr__title {
     color: rgb(224, 224, 224);
     letter-spacing: 1px;
+}
+.st__info__title {
+    font-size: 32px;
 }
 .bl__main__cr {
     position: relative;
@@ -137,6 +140,7 @@
 }
 .bl__main__cr__title {
     margin: 1rem 0;
+    font-size: 18px;
 }
 .menu {
     background: rgba(255, 255, 255, 0.8);
@@ -175,23 +179,30 @@
     justify-content: space-between;
 }
 .art__string {
-    width: 30%;
-    color: rgb(162, 162, 162);
+    color: rgb(206, 162, 253);
+    font-size: 24px;
+    width: 31%;
 }
 .bl__main__cr-other-fl {
-    width: 30%;
+    width: 31%;
 }
 .art__string-other {
     width: 100%;
-    color: rgb(162, 162, 162);
+    color: rgb(206, 162, 253);
 }
+.st__info__description-finish {
+    color: rgb(206, 162, 253);
+    font-family: "Caveat-Regular", sans-serif;
+    font-size: 24px;
+}
+
 .cr__bl {
     position: relative;
     z-index: 1;
     background: rgba(61, 83, 44, 0.7);
     display: flex;
     justify-content: space-evenly;
-    padding: 2rem 0 3rem 0;
+    padding: 0 0 2rem 0;
 }
 .cr__bl__inner {
     background: #ffffff;
@@ -277,7 +288,7 @@ div.ant-carousel-dots {
     height: auto;
     position: absolute;
     left: 0;
-    bottom: -50px;
+    bottom: -35px;
     z-index: 30;
     text-align: center;
 }
@@ -355,16 +366,18 @@ span.ant-dot {
 }
 .st__info__description-italic {
     font-style: italic;
+    font-size: 18px;
+    width: 60%;
 }
 .st__info__description-other {
     letter-spacing: 1px;
 }
 .bl__main__cr-other {
-    width: 70%;
+    width: 65%;
 }
 .st__info__description-finish {
     width: 100%;
-    font-size: 18px;
+    font-size: 24px;
 }
 .bl__main__cr__flex-inner {
     width: 50%;
@@ -401,8 +414,9 @@ span.ant-dot {
     color: #ffffff;
 }
 .st__info__description-other__size {
-    font-size: 18px;
-    color: #ffffff;
+    font-size: 24px;
+    color: rgb(206, 162, 253);
+    font-family: "Caveat-Regular", sans-serif;
 }
 .footer__cont__phone {
     display: flex;
