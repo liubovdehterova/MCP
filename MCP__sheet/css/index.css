@@ -330,7 +330,7 @@
     position: relative;
     left: 10%;
     font-family: "Roboto-Regular", sans-serif;
-    font-size: 30px;
+    font-size: 22px;
 }
 .title__main__icon:before {
     content: "";
@@ -343,6 +343,30 @@
     top: 13%;
     z-index: 2;
 }
+
+.title__main__icon:before {
+    content: "";
+    display: block;
+    position: absolute;
+    background: url("../icon/check-solid.svg") no-repeat;
+    width: 30px;
+    height: 30px;
+    left: -4%;
+    top: 13%;
+    z-index: 2;
+}
+/*.title__main__icon-other:after {*/
+/*    content: "";*/
+/*    display: block;*/
+/*    position: absolute;*/
+/*    background: rgb(224, 224, 224);*/
+/*    border-radius: 50%;*/
+/*    width: 40px;*/
+/*    height: 40px;*/
+/*    left: -4.5%;*/
+/*    top: -7%;*/
+/*    z-index: 0;*/
+/*}*/
 .information {
     display: flex;
     color: rgb(224, 224, 224);
