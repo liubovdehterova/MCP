@@ -6,7 +6,7 @@ function Ant(crslId) {
     }
     else {
         this.crslRoot = document.querySelector('.ant-carousel')
-    };
+    }
 
     // Carousel objects
     this.crslList = this.crslRoot.querySelector('.ant-carousel-list');
@@ -19,7 +19,7 @@ function Ant(crslId) {
     // Initialization
     this.options = Ant.defaults;
     Ant.initialize(this)
-};
+}
 
 Ant.defaults = {
 
@@ -46,9 +46,11 @@ Ant.prototype.elemPrev = function(num) {
         this.currentOffset += this.elemWidth*num;
         this.crslList.style.marginLeft = this.currentOffset + 'px';
         if(this.currentElement == 0) {
-            this.leftArrow.style.display = 'none'; this.touchPrev = false
+            this.leftArrow.style.display = 'none';
+            this.touchPrev = false
         }
-        this.rightArrow.style.display = 'block'; this.touchNext = true
+        this.rightArrow.style.display = 'block';
+        this.touchNext = true
     }
     else {                    // сдвиг вправо с циклом
         let elm, buf, this$ = this;
@@ -57,7 +59,7 @@ Ant.prototype.elemPrev = function(num) {
             buf = elm.cloneNode(true);
             this.crslList.insertBefore(buf, this.crslList.firstElementChild);
             this.crslList.removeChild(elm)
-        };
+        }
         this.crslList.style.marginLeft = '-' + this.elemWidth*num + 'px';
         let compStyle = window.getComputedStyle(this.crslList).marginLeft;
         this.crslList.style.cssText = 'transition:margin '+this.options.speed+'ms ease;';
@@ -80,7 +82,8 @@ Ant.prototype.elemNext = function(num) {
         this.currentOffset -= this.elemWidth*num;
         this.crslList.style.marginLeft = this.currentOffset + 'px';
         if(this.currentElement == this.dotsVisible-1) {
-            this.rightArrow.style.display = 'none'; this.touchNext = false
+            this.rightArrow.style.display = 'none';
+            this.touchNext = false
         }
         this.leftArrow.style.display = 'block'; this.touchPrev = true
     }
@@ -89,12 +92,12 @@ Ant.prototype.elemNext = function(num) {
         this.crslList.style.cssText = 'transition:margin '+this.options.speed+'ms ease;';
         this.crslList.style.marginLeft = '-' + this.elemWidth*num + 'px';
         setTimeout(function() {
-            this$.crslList.style.cssText = 'transition:none;';
+            this$.crslList.style.cssText = 'transition:none';
             for(let i=0; i<num; i++) {
                 elm = this$.crslList.firstElementChild;
                 buf = elm.cloneNode(true); this$.crslList.appendChild(buf);
                 this$.crslList.removeChild(elm)
-            };
+            }
             this$.crslList.style.marginLeft = '0px'
         }, this.options.speed)
     }
@@ -126,7 +129,7 @@ Ant.initialize = function(that) {
     // Functions
     function getTime() {
         return new Date().getTime();
-    };
+    }
     function setAutoScroll() {
         that.autoScroll = setInterval(function() {
             let fnTime = getTime();
@@ -134,14 +137,14 @@ Ant.initialize = function(that) {
                 bgTime = fnTime; that.elemNext()
             }
         }, that.options.interval)
-    };
+    }
 
     // Start initialization
     if(that.elemCount <= that.options.elemVisible) {   // Отключить навигацию
         that.options.auto = false; that.options.touch = false;
         that.options.arrows = false; that.options.dots = false;
         that.leftArrow.style.display = 'none'; that.rightArrow.style.display = 'none'
-    };
+    }
 
     if(!that.options.loop) {       // если нет цикла - уточнить количество точек
         that.dotsVisible = that.elemCount - that.options.elemVisible + 1;
@@ -156,7 +159,7 @@ Ant.initialize = function(that) {
             clearInterval(that.autoScroll)
         }, false);
         that.crslList.addEventListener('mouseleave', setAutoScroll, false)
-    };
+    }
 
     if(that.options.touch) {   // инициализация прокрутки прикосновением
         that.crslList.addEventListener('touchstart', function(e) {
@@ -179,7 +182,7 @@ Ant.initialize = function(that) {
                 }
             }
         }, false)
-    };
+    }
 
     if(that.options.arrows) {  // инициализация стрелок
         if(!that.options.loop) that.crslList.style.cssText =
@@ -200,13 +203,13 @@ Ant.initialize = function(that) {
     else {
         that.leftArrow.style.display = 'none';
         that.rightArrow.style.display = 'none'
-    };
+    }
 
     if(that.options.dots) {  // инициализация индикаторных точек
         let sum = '', diffNum;
         for(let i=0; i<that.dotsVisible; i++) {
             sum += '<span class="ant-dot"></span>'
-        };
+        }
         that.indicatorDots.innerHTML = sum;
         that.indicatorDotsAll = that.crslRoot.querySelectorAll('span.ant-dot');
         // Назначаем точкам обработчик события 'click'
@@ -221,7 +224,7 @@ Ant.initialize = function(that) {
                 }
                 // Если n == that.currentElement ничего не делаем
             }, false)
-        };
+        }
         that.dotOff(0);  // точка[0] выключена, остальные включены
         for(let i=1; i<that.dotsVisible; i++) {
             that.dotOn(i)

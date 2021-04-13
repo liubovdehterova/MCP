@@ -408,7 +408,7 @@ span.ant-dot {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    align-items: flex-end;
+    align-items: center;
 }
 .bl__button {
     padding: 1rem 0;
