@@ -218,7 +218,8 @@
 }
 
 .ant-carousel-element {
-    width: 200px;
+    width: 260px;
+    height: 80px;
     margin-right: 1rem;
     text-align: center;
 }
@@ -307,8 +308,8 @@ span.ant-dot {
     cursor: pointer;
 }
 .ant-carousel-element {
-    background-color: #BBB;
-    padding: 2rem 1rem;
+    background-color: rgba(255, 255, 255, .9);
+    padding: 0;
 }
 .bl__main__cr-other-fl {
     display: flex;
@@ -436,6 +437,313 @@ span.ant-dot {
 .container-other-main {
     background: rgba(48, 48, 48, 0.85);
 }
+.ant__jindal__stainless,
+.ant__outokumpu,
+.ant__technoTub,
+.ant__akroni,
+.ant__bns,
+.ant__VSMZ,
+.ant__dneprospetsstal,
+.ant__VMK,
+.ant__ZLT,
+.ant__KMP,
+.ant__MRCH,
+.ant__MECH,
+.ant__NPP,
+.ant__NHTS,
+.ant__Oniks,
+.ant__PTRS,
+.ant__PNTZ,
+.ant__Reckom,
+.ant__Rusinok,
+.ant__Siv,
+.ant__TMK,
+.ant__Fort,
+.ant__CHTPZ,
+.ant__ELEKTR,
+.ant__ONZ,
+.ant__ARZ,
+.ant__RMZ,
+.ant__GRMA,
+.ant__BELZ,
+.ant__BELC,
+.ant__BELOB,
+.ant__BELHim,
+.ant__BELColMet,
+.ant__BELENRE,
+.ant__BMZ,
+.ant__BRSGAZ,
+.ant__BRSENRG,
+.ant__VTBENRG,
+.ant__VLMEET,
+.ant__GMZ,
+.ant__HOMLHIM,
+.ant__HOMLENG,
+.ant__ZHSZ,
+.ant__red,
+.ant__leh,
+.ant__car,
+.ant__MZKT,
+.ant__minsk,
+.ant__minsk__prom,
+.ant__minsk__energ,
+.ant__minsk__mmz,
+.ant__minsk__mzlt,
+.ant__minsk__mzrs,
+.ant__minsk__mpz,
+.ant__nft,
+.ant__npo,
+.ant__ptm,
+.ant__svn,
+.ant__spart,
+.ant__cem {
+    height: 100%;
+}
+.ant__jindal__stainless {
+    background: url("../img/Производители нерж/Jindal stainless.png") no-repeat center center;
+    background-size: cover;
+}
+.ant__outokumpu {
+    background: url("../img/Производители нерж/Outokumpu.png") no-repeat center center;
+    background-size: cover;
+}
+.ant__technoTub {
+    background: url("../img/Производители нерж/TechnoTub.png") no-repeat center center;
+    background-size: contain;
+}
+.ant__akroni {
+    background: url("../img/Производители нерж/Акрони.png") no-repeat center center;
+    background-size: contain;
+}
+.ant__bns {
+    background: url("../img/Производители нерж/БНС.png") no-repeat center center;
+    background-size: contain;
+}
+.ant__VSMZ {
+    background: url("../img/Производители нерж/ВСМЗ.png") no-repeat center center;
+    background-size: 80%;
+    padding: 0 2px;
+}
+.ant__dneprospetsstal {
+    background: url("../img/Производители нерж/Днепроспецсталь.png") no-repeat center center;
+    background-size: contain;
+}
+.ant__VMK {
+    background: url("../img/Производители нерж/ВМК.png") no-repeat center center;
+    background-size: contain;
+}
+.ant__ZLT {
+    background: url("../img/Производители нерж/златоустовский металлургический завод.png") no-repeat center center;
+    background-size: contain;
+}
+
+.ant__KMP {
+    background: url("../img/Производители нерж/Комплект 92.png") no-repeat center center;
+    background-size: contain;
+}
+.ant__MRCH {
+    background: url("../img/Производители нерж/Марчегаглия.png") no-repeat center center;
+    background-size: contain;
+}
+.ant__MECH {
+    background: url("../img/Производители нерж/мечел.png") no-repeat center center;
+    background-size: contain;
+}
+.ant__NPP {
+    background: url("../img/Производители нерж/НПП Стан.png") no-repeat center center;
+    background-size: contain;
+}
+.ant-carousel-element-bg {
+    background: none;
+}
+
+.ant__NHTS {
+    background: url("../img/Производители нерж/НХТС.png") no-repeat center center;
+    background-size: contain;
+}
+.ant__Oniks {
+    background: url("../img/Производители нерж/Оникс.png") no-repeat center center;
+    background-size: contain;
+}
+.ant__PTRS {
+    background: url("../img/Производители нерж/Петросталь.png") no-repeat center center;
+    background-size: contain;
+}
+.ant__PNTZ {
+    background: url("../img/Производители нерж/ПНТЗ.png") no-repeat center center;
+    background-size: contain;
+}
+.ant__Reckom {
+    background: url("../img/Производители нерж/Реком.png") no-repeat center center;
+    background-size: contain;
+}
+.ant__Rusinok {
+    background: url("../img/Производители нерж/Русинокс.png") no-repeat center center;
+    background-size: contain;
+}
+.ant__Siv {
+    background: url("../img/Производители нерж/Сиверский метизный завод.png") no-repeat center center;
+    background-size: contain;
+}
+.ant__TMK {
+    background: url("../img/Производители нерж/ТМК ВТЗ.png") no-repeat center center;
+    background-size: contain;
+}
+.ant__Fort {
+    background: url("../img/Производители нерж/Форт.png") no-repeat center center;
+    background-size: contain;
+}
+.ant__CHTPZ {
+    background: url("../img/Производители нерж/ЧТПЗ.png") no-repeat center center;
+    background-size: contain;
+}
+.ant__ELEKTR {
+    background: url("../img/Производители нерж/электросталь.png") no-repeat center center;
+    background-size: contain;
+}
+.ant__ONZ {
+    background: url("../img/наши клиенты/140 ремонтный завод.png") no-repeat center center;
+    background-size: contain;
+}
+.ant__ARZ {
+    background: url("../img/наши клиенты/558 арз.png") no-repeat center center;
+    background-size: contain;
+}
+.ant__RMZ {
+    background: url("../img/наши клиенты/rmz.jpg") no-repeat center center;
+    background-size: contain;
+}
+.ant__GRMA {
+    background: url("../img/наши клиенты/бабушкина крынка.png") no-repeat center center;
+    background-size: contain;
+}
+.ant__BELZ {
+    background: url("../img/наши клиенты/белаз.png") no-repeat center center;
+    background-size: contain;
+}
+.ant__BELC {
+    background: url("../img/наши клиенты/беларуськалий.jpg") no-repeat center center;
+    background-size: contain;
+}
+.ant__BELOB {
+    background: url("../img/наши клиенты/белорусские обои.png") no-repeat center center;
+    background-size: contain;
+}
+.ant__BELHim {
+    background: url("../img/наши клиенты/белхим.png") no-repeat center center;
+    background-size: contain;
+}
+.ant__BELColMet {
+    background: url("../img/наши клиенты/белцветмет.png") no-repeat center center;
+    background-size: contain;
+}
+.ant__BELENRE {
+    background: url("../img/наши клиенты/белэнергоремналадка.jpg") no-repeat center center;
+    background-size: contain;
+}
+.ant__BMZ {
+    background: url("../img/наши клиенты/БМЗ.jpg") no-repeat center center;
+    background-size: contain;
+}
+.ant__BRSGAZ {
+    background: url("../img/наши клиенты/брестгазоаппарат.jpg") no-repeat center center;
+    background-size: contain;
+}
+.ant__BRSENRG {
+    background: url("../img/наши клиенты/брестэнерго.jpg") no-repeat center center;
+    background-size: contain;
+}
+.ant__VTBENRG {
+    background: url("../img/наши клиенты/витебскэнерго.jpg") no-repeat center center;
+    background-size: contain;
+}
+.ant__VLMEET {
+    background: url("../img/наши клиенты/волковысский мясокомбинат.jpg") no-repeat center center;
+    background-size: contain;
+}
+.ant__GMZ {
+    background: url("../img/наши клиенты/ГМЗ.jpg") no-repeat center center;
+    background-size: contain;
+}
+.ant__HOMLHIM {
+    background: url("../img/наши клиенты/Гомельский химический завод.png") no-repeat center center;
+    background-size: contain;
+}
+.ant__HOMLENG {
+    background: url("../img/наши клиенты/гомельэнерго.jpg") no-repeat center center;
+    background-size: contain;
+}
+.ant__ZHSZ {
+    background: url("../img/наши клиенты/ЖСЗ.gif") no-repeat center center;
+    background-size: contain;
+}
+.ant__red {
+    background: url("../img/наши клиенты/красный пищевик.jpg") no-repeat center center;
+    background-size: contain;
+}
+.ant__leh {
+    background: url("../img/наши клиенты/легмаш.jpg") no-repeat center center;
+    background-size: contain;
+}
+.ant__car {
+    background: url("../img/наши клиенты/машпищепрод.jpg") no-repeat center center;
+    background-size: contain;
+}
+.ant__MZKT {
+    background: url("../img/наши клиенты/мзш.jpg") no-repeat center center;
+    background-size: contain;
+}
+
+.ant-carousel-element-bg-oth {
+    background: #fff;
+}
+
+.ant__minsk {
+    background: url("../img/наши клиенты/минск кристалл.jpg") no-repeat center center;
+    background-size: contain;
+}
+
+.ant__minsk__prom {
+    background: url("../img/наши клиенты/минскхлебпром.jpg") no-repeat center center;
+    background-size: contain;
+}
+
+.ant__minsk__energ {
+    background: url("../img/наши клиенты/минскэнерго.jpg") no-repeat center center;
+    background-size: contain;
+}
+
+.ant__minsk__mmz {
+    background: url("../img/наши клиенты/ммз.jpg") no-repeat center center;
+    background-size: contain;
+}
+
+.ant__minsk__mzlt {
+    background: url("../img/наши клиенты/можелит.jpg") no-repeat center center;
+    background-size: contain;
+}
+
+.ant__minsk__mzrs {
+    background: url("../img/наши клиенты/Мозырский_НПЗ2.jpg") no-repeat center center;
+    background-size: contain;
+}
+.ant__minsk__mpz {
+    background: url("../img/наши клиенты/мпз.jpg") no-repeat center center;
+    background-size: contain;
+}
+.ant__nft {
+    background: url("../img/наши клиенты/нафтан.jpg") no-repeat center center;
+    background-size: contain;
+}
+.ant__npo {
+    background: url("../img/наши клиенты/нпо центр.jpg") no-repeat center center;
+    background-size: contain;
+}
+.ant__ptm {
+    background: url("../img/наши клиенты/птм.jpg") no-repeat center center;
+    background-size: contain;
+}
+
 
 @media screen and (max-width: 820px) {
     .ant-carousel-hider {
@@ -443,6 +751,9 @@ span.ant-dot {
     }
     .bl__main__cr-other-fl {
         width: 25%;
+    }
+    .ant-carousel-dots {
+        display: none;
     }
 }
 @media screen and (max-width: 640px) {
@@ -469,6 +780,7 @@ span.ant-dot {
     }
     .bl__menu {
         justify-content: center;
+        flex-wrap: wrap;
         width: 100%;
     }
     .bl__menu__list {
@@ -488,9 +800,6 @@ span.ant-dot {
     }
     .footer__cont__email-inner {
         left: -26px;
-    }
-    .bl__menu {
-        justify-content: space-around;
     }
     .bl__main__cr__flex-inner {
         width: 100%;

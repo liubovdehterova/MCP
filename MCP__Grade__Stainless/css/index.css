@@ -97,6 +97,7 @@
     width: 95%;
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     margin: 0;
 }
@@ -570,6 +571,7 @@ span.ant-dot {
     }
     .bl__menu {
         justify-content: center;
+        flex-wrap: wrap;
         width: 100%;
     }
     .bl__menu__list {
@@ -592,6 +594,7 @@ span.ant-dot {
     }
     .bl__menu {
         justify-content: space-around;
+        flex-wrap: wrap;
     }
     .bl__main__cr__flex-inner {
         width: 100%;
